@@ -53,11 +53,11 @@ document.addEventListener("DOMContentLoaded", function() {
     var aadhaarNo = aadhaarNoInput.value;
 
     if (!aadhaarNo) {
-      aadhaarNoInput.classList.add('invalid');
+      aadhaarNoInput.classList.add('is-invalid');
       alert('Aadhaar No. is a required field.');
       return;
     } else {
-      aadhaarNoInput.classList.remove('invalid');
+      aadhaarNoInput.classList.remove('is-invalid');
     }
 
     // Verification logic goes here
@@ -72,6 +72,6 @@ document.addEventListener("DOMContentLoaded", function() {
   var continueBtn = document.getElementById('continue-btn');
   continueBtn.addEventListener('click', function() {
     // Navigate to the fourth page
-    window.location.href = 'fourth_page.html';
+    window.location.href = 'fourth.html';
   });
 });
