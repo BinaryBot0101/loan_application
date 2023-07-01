@@ -1,9 +1,8 @@
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     height: 100vh;
     padding: 10px;
+    max-width: 100%;
   }
   
   .profile-icon {
@@ -12,7 +11,13 @@ body {
   }
   
   .form-container {
-    max-width: 100%;
+    
+  
+    
+    margin-top: 20vh;
+    margin-left:15% ;
+
+    max-width: 70%;
     padding: 10px;
     background-color: #f8f9fa;
     border-radius: 8px;

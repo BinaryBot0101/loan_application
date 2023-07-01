@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
       aadhaarNoInput.value = '';
       aadhaarNoInput.disabled = false;
     } else {
-      aadhaarNoInput.value = 'xxxx -xxxx -x548';
+      aadhaarNoInput.value = 'xxxx - xxxx - x548';
       aadhaarNoInput.disabled = true;
     }
   });
@@ -53,15 +53,15 @@ document.addEventListener("DOMContentLoaded", function() {
     var aadhaarNo = aadhaarNoInput.value;
 
     if (!aadhaarNo) {
-      aadhaarNoInput.classList.add('invalid');
+      aadhaarNoInput.classList.add('is-invalid');
       alert('Aadhaar No. is a required field.');
       return;
     } else {
-      aadhaarNoInput.classList.remove('invalid');
+      aadhaarNoInput.classList.remove('is-invalid');
     }
 
     // Verification logic goes here
-
+    
     // Show verification modal
     var verificationModal = document.getElementById('verificationModal');
     var bootstrapModal = new bootstrap.Modal(verificationModal);
