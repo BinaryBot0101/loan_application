@@ -1,0 +1,105 @@
+
+/* Progress Bar */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  font: 0.7rem 'myriad pro', helvetica, sans-serif;
+}
+
+.progress-list {
+  display: flex;
+  list-style-type: none;
+  gap: 4.25rem;
+}
+
+.progress-item {
+  width: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.progress-indicator {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.15rem solid rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.5rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 900;
+}
+
+.progress-indicator::before {
+  content: '';
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.progress-indicator::after {
+  content: '';
+  position: absolute;
+  left: 3.4rem;
+  width: 3.5rem;
+  height: 0.18rem;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.progress-item:last-of-type .progress-indicator::after {
+  display: none;
+}
+
+.progress-info {
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.progress-status {
+  color: rgba(0, 0, 0, 0.5);
+  font-style: italic;
+}
+
+.progress-interface {
+  user-select: none;
+}
+
+.progress-btn {
+  background-color: transparent;
+  border: none;
+  font-size: 1.25rem;
+  margin: 0.75rem;
+  cursor: pointer;
+}
+
+.active .progress-indicator {
+  border-color: black;
+  color: white;
+}
+
+.active .progress-indicator::before {
+  border-color: black;
+  background-color: black;
+}
+
+.active .progress-indicator::after {
+  background-color: black;
+}
+
+.active .progress-status {
+  color: rgba(0, 0, 0, 0.75);
+}

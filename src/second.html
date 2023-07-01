@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirm Customer Identity</title>
+
+  <link rel="stylesheet" href="style/second.css">
+  <link rel="stylesheet" href="style/common/progressbar.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    
+    <!-- PROGRESS BAR -->
+  <div class="progress">
+    <ul class="progress-list">
+      <li class="progress-item">
+        <div class="progress-indicator">1</div>
+        <p class="progress-info">Registration</p>
+        <p class="progress-status">In Progress</p>
+      </li>
+      <li class="progress-item">
+        <div class="progress-indicator">2</div>
+        <p class="progress-info">Courses</p>
+        <p class="progress-status">Pending</p>
+      </li>
+      <li class="progress-item">
+        <div class="progress-indicator">3</div>
+        <p class="progress-info">Confirmation</p>
+        <p class="progress-status">Pending</p>
+      </li>
+      <li class="progress-item">
+        <div class="progress-indicator">4</div>
+        <p class="progress-info">Payment</p>
+        <p class="progress-status">Pending</p>
+      </li>
+    </ul>
+    <nav class="progress-interface">
+      <ion-icon class="progress-btn prev" name="chevron-back-outline"></ion-icon>
+      <ion-icon class="progress-btn next" name="chevron-forward-outline"></ion-icon>
+    </nav>
+  </div>
+
+
+    <div class="container">
+        <h2 class="page-heading">Confirm Customer Identity</h2>
+        
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="first-name">First Name:</label>
+            <input type="text" class="form-control" id="first-name" required>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="middle-name">Middle Name:</label>
+            <input type="text" class="form-control" id="middle-name" required>
+          </div>
+          <div class="form-group col-md-4">
+            <label for="last-name">Last Name:</label>
+            <input type="text" class="form-control" id="last-name" required>
+          </div>
+        </div>
+    
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="dob">DOB:</label>
+            <input type="date" class="form-control" id="dob" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="mobile-number">Mobile Number:</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <select class="form-control" id="isd-code">
+                  <option>+1</option>
+                  <option>+91</option>
+                  <option>+44</option>
+                  <!-- Add more options as needed -->
+                </select>
+              </div>
+              <input type="text" class="form-control" id="mobile-number" required>
+            </div>
+          </div>
+        </div>
+    
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" class="form-control" id="email" required>
+        </div>
+    
+        <h3 class="section-heading">Identification Details</h3>
+    
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="pan-no">PAN No.:</label>
+            <input type="text" class="form-control" id="pan-no" required>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="passport-no">Passport No.:</label>
+            <input type="text" class="form-control" id="passport-no">
+          </div>
+        </div>
+    
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="driving-license">Driving License:</label>
+            <input type="text" class="form-control" id="driving-license">
+          </div>
+        </div>
+    
+        <div class="form-group">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="terms-checkbox">
+            <label class="custom-control-label" for="terms-checkbox">Customer agreed to use above information for Fintech checks</label>
+          </div>
+        </div>
+    
+        <div class="form-group">
+          <button class="btn btn-primary btn-send-sms" id="send-sms-btn" disabled>Send SMS</button>
+        </div>
+      </div>
+    
+      <!-- OTP Modal -->
+      <div class="modal fade" id="otpModal" tabindex="-1" role="dialog" aria-labelledby="otpModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="otpModalLabel">Enter OTP</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="otp">OTP:</label>
+                <!-- <input type="text" class="form-control" id="otp" pattern="[0-9]{4}" minlength="4" maxlength="4" required> -->
+                <input type="text" class="form-control" id="otp">
+                <small id="otp-helper" class="form-text text-muted">Enter OTP of 4 digits.</small>
+             
+                
+              </div>
+              <p id="verified-text" class="text-success d-none">Verified <i class="fas fa-check"></i></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" id="continue-btn" disabled>Continue</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <script src="js/second.js"></script>
+      <script src="js/common/progressbar.js"></script>
+     
+
+
+    </body>
+    </html>
