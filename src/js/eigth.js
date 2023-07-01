@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var continueBtn = document.getElementById('send-back-btn');
     continueBtn.addEventListener('click', function() {
       // Navigate to the fourth page
-      window.location.href = 'sixth.html';
+      window.location.href = 'seventh.html';
     });
   
 
