@@ -127,3 +127,8 @@ $(document).ready(function() {
     });
   });
   
+
+    $('#continue-btn').click(function() {
+      // Navigate to the fourth page
+      window.location.href = 'third.html';
+    });
