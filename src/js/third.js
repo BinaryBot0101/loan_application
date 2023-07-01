@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function() {
       aadhaarNoInput.value = '';
       aadhaarNoInput.disabled = false;
     } else {
-      aadhaarNoInput.value = 'xxxx -xxxx -x548';
+      aadhaarNoInput.value = 'xxxx - xxxx - x548';
       aadhaarNoInput.disabled = true;
     }
   });
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Verification logic goes here
-
+    
     // Show verification modal
     var verificationModal = document.getElementById('verificationModal');
     var bootstrapModal = new bootstrap.Modal(verificationModal);
