@@ -34,10 +34,10 @@
         <p class="progress-status">Pending</p>
       </li>
     </ul>
-    <nav class="progress-interface">
+    <!-- <nav class="progress-interface">
       <ion-icon class="progress-btn prev" name="chevron-back-outline"></ion-icon>
       <ion-icon class="progress-btn next" name="chevron-forward-outline"></ion-icon>
-    </nav>
+    </nav> -->
   </div>
 
 
@@ -112,9 +112,11 @@
             <label class="custom-control-label" for="terms-checkbox">Customer agreed to use above information for Fintech checks</label>
           </div>
         </div>
-    
+        
         <div class="form-group">
-          <button class="btn btn-primary btn-send-sms" id="send-sms-btn" disabled>Send SMS</button>
+          <button type="button" class="btn btn-secondary btn-send-back  "  id="send-back-btn" >Back</button>
+          <button class="btn btn-primary btn-send-sms " id="send-sms-btn" disabled>Send SMS</button>
+          
         </div>
       </div>
     
@@ -141,6 +143,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-primary" id="continue-btn" disabled>Continue</button>
+            
             </div>
           </div>
         </div>

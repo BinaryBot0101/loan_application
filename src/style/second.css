@@ -3,17 +3,22 @@
     margin: 20px;
   }
   
-  .page-heading {
+  /* .page-heading {
     font-weight: bold;
-  }
+  } */
   
   .section-heading {
-    font-weight: bold;
+    /* font-weight: bold; */
     margin-top: 20px;
   }
   
   .btn-send-sms {
     margin-top: 20px;
+  }
+
+  .btn-send-back {
+    margin-top: 20px;
+    margin-right: 10px;
   }
   
   .verified-text {

@@ -132,3 +132,8 @@ $(document).ready(function() {
       // Navigate to the fourth page
       window.location.href = 'third.html';
     });
+
+    $('#send-back-btn').click(function() {
+      // Navigate to the fourth page
+      window.location.href = '../index.html';
+    });
