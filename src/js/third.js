@@ -72,6 +72,6 @@ document.addEventListener("DOMContentLoaded", function() {
   var continueBtn = document.getElementById('continue-btn');
   continueBtn.addEventListener('click', function() {
     // Navigate to the fourth page
-    window.location.href = 'fourth_page.html';
+    window.location.href = 'fourth.html';
   });
 });
