@@ -1,4 +1,4 @@
-body {
+/* body {
     
     height: 100vh;
     padding: 10px;
@@ -26,4 +26,26 @@ body {
   .btn-continue:hover {
     background-color: #ffcc00;
   }
+   */
+
   
+   .profile-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .form-container {
+    /* margin-top: 20vh; */
+    margin-left: 15%;
+    max-width: 70%;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    /* height: 100vh; */
+    padding: 10px;
+    /* max-width: 100%; */
+  }
+  
+  .btn-continue:hover {
+    background-color: #ffcc00;
+  }

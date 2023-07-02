@@ -1,19 +1,32 @@
-
-/* Progress Bar */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+nav{
+  position: relative;
+}
+.new-progress {
+  margin-top: 10vh;
+  margin-left: 15%;
+  max-width: 70%;
+  /* padding: 10px; */
+  border-radius: 8px;
+  font: 0.7rem 'myriad pro',helvetica,sans-serif;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  display: flex;
+  
 }
 
-.progress {
+/* .rogress {
   display: flex;
-  flex-direction: column;
+   flex-direction: column;  
   align-items: center;
   gap: 4rem;
-  font: 0.7rem 'myriad pro', helvetica, sans-serif;
-}
+  font: 0.7rem 'myriad pro',helvetica,sans-serif;
+  margin-top: 10vh;
+  margin-left: 15%;
+  max-width: 70%;
+  padding: 10px;
+  border-radius: 8px;
+} */
 
 .progress-list {
   display: flex;
@@ -33,12 +46,12 @@
   position: relative;
   width: 2.5rem;
   height: 2.5rem;
-  border: 0.15rem solid rgba(0, 0, 0, 0.25);
+  border: 0.15rem solid rgba(0,0,0,0.25);
   border-radius: 50%;
   display: grid;
   place-items: center;
   margin-bottom: 0.5rem;
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0,0,0,0.5);
   font-weight: 900;
 }
 
@@ -57,26 +70,22 @@
   left: 3.4rem;
   width: 3.5rem;
   height: 0.18rem;
-  background-color: rgba(0, 0, 0, 0.25);
+  background-color: rgba(0,0,0,0.25);
 }
 
-.progress-item:last-of-type .progress-indicator::after {
-  display: none;
-}
+.progress-item:last-of-type .progress-indicator::after { display: none; }
 
 .progress-info {
   font-weight: 600;
   font-size: 0.8rem;
 }
 
-.progress-status {
-  color: rgba(0, 0, 0, 0.5);
-  font-style: italic;
+.progress-status { 
+  color: rgba(0,0,0,0.5); 
+  font-style: italic; 
 }
 
-.progress-interface {
-  user-select: none;
-}
+.progress-interface { user-select: none; }
 
 .progress-btn {
   background-color: transparent;
@@ -91,15 +100,10 @@
   color: white;
 }
 
-.active .progress-indicator::before {
+.active .progress-indicator::before  {
   border-color: black;
   background-color: black;
 }
 
-.active .progress-indicator::after {
-  background-color: black;
-}
-
-.active .progress-status {
-  color: rgba(0, 0, 0, 0.75);
-}
+.active .progress-indicator::after  { background-color: black; }
+.active .progress-status            { color: rgba(0,0,0,0.75); }
