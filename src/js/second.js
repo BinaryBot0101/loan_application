@@ -111,6 +111,7 @@ $(document).ready(function() {
     otpInput.on('input', function() {
         var otpValue = otpInput.val();
         otpValue = otpValue.replace(/[^0-9]/g, ''); // Remove any non-numeric characters
+        otpValue = otpValue.slice(0, 4);
         otpInput.val(otpValue);
       
         if (otpValue !== '' && otpValue.length === 4) {

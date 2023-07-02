@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
       aadhaarNoInput.value = '';
       aadhaarNoInput.disabled = false;
     } else {
-      aadhaarNoInput.value = 'xxxx-xxxx-xxxx';
+      aadhaarNoInput.value = 'xxxx - xxxx - x548';
       aadhaarNoInput.disabled = true;
     }
   });
