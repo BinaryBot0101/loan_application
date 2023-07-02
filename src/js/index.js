@@ -1,6 +1,6 @@
 function openSecondPage() {
     // Logic to open the second page goes here
-    window.location.href = 'src/second.html';
+    window.location.href = 'second.html';
     console.log("Opening the second page...");
   }
   

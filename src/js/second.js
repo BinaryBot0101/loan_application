@@ -136,5 +136,5 @@ $(document).ready(function() {
 
     $('#send-back-btn').click(function() {
       // Navigate to the fourth page
-      window.location.href = '../index.html';
+      window.location.href = 'index.html';
     });
