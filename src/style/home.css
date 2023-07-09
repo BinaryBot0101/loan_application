@@ -107,6 +107,7 @@ animation: animate 6s linear infinite;
 .twitch:hover .one {
 border: none;
 background:rgb(20, 36, 50);;
+opacity: 30%;
 }
 
 .square .two {
@@ -124,6 +125,7 @@ animation: animate 6s linear infinite;
 .twitch:hover .two {
 border: none;
 background: rgb(20, 36, 50);;
+opacity: 50%;
 
 }
 
@@ -144,6 +146,7 @@ animation: animate2 10s linear infinite;
 .twitch:hover .three {
 border: none;
 background:rgb(20, 36, 50);;
+opacity: 70%;
 }
 
 .circle {
